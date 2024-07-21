@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ارحبو</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            position: relative;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 90vh;
+        }
+        .options {
+            display: flex;
+            justify-content: center;
+        }
+        .option {
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid white;
+            border-radius: 10px;
+            width: 200px;
+            cursor: pointer;
+        }
+        .option:hover {
+            background-color: #444;
+        }
+        .price {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+        .background-squares {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-size: 20px 20px;
+            background-image: linear-gradient(to right, #333 1px, transparent 1px),
+                              linear-gradient(to bottom, #333 1px, transparent 1px);
+        }
+        .steve {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-squares"></div>
+    <div class="container">
+        <h1>ارحبو</h1>
+        <div class="options">
+            <div class="option">
+                <div>رتبت طيران</div>
+                <div class="price">5 يورو</div>
+                <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=abwo64052@gmail.com&item_name=رتبت طيران&amount=5.00&currency_code=EUR" class="paypal-button">دفع الآن</a>
+            </div>
+            <div class="option">
+                <div>رتبت صاروخ</div>
+                <div class="price">5 يورو</div>
+                <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=abwo64052@gmail.com&item_name=رتبت صاروخ&amount=5.00&currency_code=EUR" class="paypal-button">دفع الآن</a>
+            </div>
+            <div class="option">
+                <div>رتبت فلوس</div>
+                <div class="price">5 يورو</div>
+                <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=abwo64052@gmail.com&item_name=رتبت فلوس&amount=5.00&currency_code=EUR" class="paypal-button">دفع الآن</a>
+            </div>
+        </div>
+    </div>
+    <img src="https://www.seekpng.com/png/full/83-839020_minecraft-steve-png-image-minecraft-steve-with-sword.png" alt="Steve from Minecraft with Sword" class="steve">
+</body>
+</html>
+
